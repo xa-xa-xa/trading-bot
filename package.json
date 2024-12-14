@@ -16,7 +16,12 @@
     "install:all": "npm install"
   },
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "ccxt": "^4.4.40",
+    "socket.io": "^4.8.1"
   }
 }
