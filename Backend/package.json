@@ -4,7 +4,7 @@
   "description": "trading-bot-backend",
   "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
     "build": "tsc",
     "serve": "npm run build && npm run start",
     "lint": "eslint . --fix"
@@ -20,7 +20,9 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
+    "@types/socket.io": "^3.0.1",
+    "@types/ws": "^8.5.13",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "eslint": "^8.57.1",
